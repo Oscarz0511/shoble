@@ -6,7 +6,7 @@ box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 }
 body {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 header {
   position: absolute;
@@ -58,7 +58,6 @@ header ul li a.active {
     text-align: center;
     margin-left: auto;
     margin-right: 9em;
-    margin-top: 2em;
 } section {
     position: relative;
     width: 100%;
@@ -78,4 +77,17 @@ header ul li a.active {
     background: #fff;
     color: black;
     font-size: 1.5em;
+} .purpose {
+    text-align: center;
+    margin-top: 10em;
+    position: fixed;
+    color: rgb(0, 0, 0);
+} .p-images {
+    object-fit: none;
+    position: absolute;
+    margin-top: 100em;
+} #trophy {
+    margin-left: -38em;
+} #score {
+    margin-left: 35em;
 }

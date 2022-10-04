@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>SHOBLE | Home</title>
+    <title>Parallax Scrolling Website | Vanilla Javascript</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
@@ -21,6 +21,13 @@
         <h2 id="text">Shoble Experiences</h2>
         <a href="#" id="btn">Explore</a>
         <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <section>
+        <h1 class="purpose">Creating diverse experiences. </h1>
+        <h2 class="purpose">For Learning and for Fun.</h2>
+        <img id="trophy" src="data:image/png;base64,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" alt="Math Game Trophy Icon" class="p-images">
+        <img id="score" class="p-images" src="Score.png" alt="Pong Score">
+
     </section>
   </body>
 </html>
