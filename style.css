@@ -6,9 +6,9 @@ box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 }
 body {
-  background-color: linear-gradient(#000000,#ffffff);
+  background-color: black;
 }
-header{
+header {
   position: absolute;
   top: 0;
   left: 0;
@@ -17,6 +17,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10000;
 }
 
 header ul{
@@ -34,14 +35,46 @@ header ul li a {
   color: #fff;
   border-radius: 20px;
 }
-header ul li a:hover {
+header ul li a:hover,
+header ul li a.active {
   background: #fff;
   color: #000000;
 } header .logo {
+    position: absolute;
+} section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+} section img #moon {
+    mix-blend-mode: screen;
+} #text {
+    position: absolute;
     color: #fff;
-    font-weight: 700;
+    font-size: 50.5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 9em;
+} section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} section img #mountains_front {
+    z-index: 10;
+} #btn {
     text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    display: inline-block;
+    padding: 8px 30px;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: black;
+    font-size: 1.5em;
 }
