@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Autocomplete Search Box | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <script>
+      (function(d, s, id) {
+          if (d.getElementById(id)) {
+              if (window.__TOMORROW__) {
+                  window.__TOMORROW__.renderWidget();
+              }
+              return;
+          }
+          const fjs = d.getElementsByTagName(s)[0];
+          const js = d.createElement(s);
+          js.id = id;
+          js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+          fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'tomorrow-sdk');
+      </script>
+
+      <div class="tomorrow"
+         data-location-id="003919"
+         data-language="EN"
+         data-unit-system="METRIC"
+         data-skin="light"
+         data-widget-type="aqiPollutant"
+         style="padding-bottom:22px;position:relative;"
+      >
+        <a
+          href="https://www.tomorrow.io/weather/"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          style="position: absolute; bottom: 0; transform: translateX(-50%); left: 50%;"> </a>
+      </div>
+    <h2>Clock:</h2>
+    <div class="clock">
+        <div>
+            <span id="hour">00</span>
+            <span class="text">Hours</span>
+        </div>
+        <div>
+            <span id="minutes">00</span>
+            <span class="text">Minutes</span>
+        </div>
+        <div>
+            <span id="seconds">00</span>
+            <span class="text">Seconds</span>
+        </div>
+        <div>
+            <span id="ampm">AM</span>
+        </div>
+    </div>
+    <h3 id="welcome">Welcome, Oscar Zhou</h3>
+    <div class="wrapper">
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="Type to search..">
+        <div class="autocom-box">
+          <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="app">
+        <h1>TO DO LIST</h1>
+        <form>
+          <input type="text" placeholder="Add new task...">
+          <button type="submit">&plus;</button>
+        </form>
+        <ul></ul>
+      </div>
+    </div>
+    <script src="js/suggestions.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
