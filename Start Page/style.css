@@ -19,6 +19,7 @@ body{
   font-family: sans-serif;
   background-size: cover;
   overflow: hidden;
+  -webkit-touch-callout: none;
 }
 
 ::selection{
